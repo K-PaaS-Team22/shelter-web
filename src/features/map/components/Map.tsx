@@ -47,7 +47,7 @@ export default function Map() {
           goalLat: destLat,
           goalLot: destLng
         }
-      : { startLat: 0, startLot: 0, goalLat: 0, goalLot: 0 }
+      : null
   );
 
   useMapBottomSheet(isLoaded, position, shelters, sheltersError);
