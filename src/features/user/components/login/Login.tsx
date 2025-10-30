@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import Button from "@/common/components/button/Button";
 import Input from "@/common/components/input/Input";
 import styles from "./Login.module.css";
-import LogoIcon from "@/assets/icon/cb_point.svg";
 import { FaUser, FaLock } from "react-icons/fa";
 import { useLoginForm } from "../../hooks/useLoginForm";
 import { useAutoLogin } from "../../hooks/useAutoLogin";
@@ -24,7 +23,7 @@ export default function Login() {
   return (
     <div className={styles.loginWrapper}>
       <div className={styles.logoArea}>
-        <img src={LogoIcon} alt="Logo" className={styles.logoImg} />
+        <img src={"/cb_point.svg"} alt="Logo" className={styles.logoImg} />
       </div>
 
       <div className={styles.inputArea}>
